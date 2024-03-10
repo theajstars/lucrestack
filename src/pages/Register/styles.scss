@@ -1,0 +1,66 @@
+@import "./../../Assets/Styles/Variables.scss";
+.register-container {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  .register {
+    width: 580px;
+    height: 480px;
+    box-sizing: border-box;
+    .logo {
+      width: 350px;
+      margin-bottom: 20px;
+    }
+    .input-container {
+      width: 100%;
+      border: 2px solid $GrayPrimary;
+      height: 55px;
+      padding: 0 20px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      .icon {
+        color: $Black;
+        font-size: 20px;
+      }
+      .input {
+        border: none;
+        height: 100%;
+        box-sizing: border-box;
+        width: -webkit-fill-available;
+        outline: none;
+        font-size: 16px;
+        margin-left: 20px;
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 30px $White inset !important;
+        }
+      }
+    }
+    button {
+      height: 45px;
+      width: 100%;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: $Black;
+      color: $White;
+      font-size: 17px;
+      font-weight: 500;
+      border-radius: 10px;
+    }
+    @media screen and (max-width: 600px) {
+      & {
+        width: 90vw;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      & {
+        .logo {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "./../../Assets/Styles/Variables.scss";
+.stats-container {
+  box-sizing: border-box;
+  width: 100%;
+  .stat {
+    border: 1px solid $GrayPrimary;
+    box-sizing: border-box;
+    padding: 20px 0;
+    height: 160px;
+    width: 31%;
+    border-radius: 15px;
+    .image-container {
+      height: 50px;
+      width: 50px;
+      border-radius: 10px;
+      .image {
+        height: 35px;
+        width: 35px;
+      }
+    }
+    .wallet-image-container {
+      background-color: $GreenTransparent;
+    }
+    .loan-image-container {
+      background-color: $PurpleTransparent;
+    }
+    .expenses-image-container {
+      background-color: $RedTransparent;
+    }
+  }
+}

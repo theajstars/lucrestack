@@ -1,0 +1,63 @@
+@import "./Components.scss";
+@import "./Fonts.scss";
+@import "./Variables.scss";
+body {
+  background-color: $White;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.align-start {
+  align-items: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.display-none {
+  display: none;
+}
+.width-100 {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.pointer {
+  cursor: pointer;
+}
+.underline {
+  text-decoration: underline;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+@for $letterSpacing from 1 through 100 {
+  .letter-space-#{$letterSpacing} {
+    letter-spacing: $letterSpacing + 0px;
+  }
+}
+@for $marginTop from 1 through 300 {
+  .mt-#{$marginTop} {
+    margin-top: $marginTop + 0px;
+  }
+}

@@ -1,0 +1,15 @@
+@import "./../../Assets/Styles/Variables.scss";
+
+.activity-overview-container {
+  margin-top: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  .header {
+    padding-bottom: 12px;
+  }
+  .activity {
+    border: 1px solid $GrayPrimary;
+    padding: 30px 12px;
+    border-radius: 15px;
+  }
+}

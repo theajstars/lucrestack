@@ -1,0 +1,10 @@
+@import "./../../Assets/Styles/Variables.scss";
+
+.transactions-overview-container {
+  margin-top: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid $GrayPrimary;
+  padding: 30px 12px;
+  border-radius: 15px;
+}

@@ -1,0 +1,87 @@
+@import "./../../Assets/Styles/Variables.scss";
+
+.actions-overview-container {
+  width: 100%;
+  margin: 30px 0;
+  height: 320px;
+  box-sizing: border-box;
+  .new-card-btn {
+    background-color: $Black;
+    color: $White;
+    border: 1px solid $Black;
+    outline: none;
+    height: 45px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 0.12s;
+    &:hover {
+      background-color: rgb(67, 67, 67);
+    }
+    .icon {
+      border: 2px dashed $White;
+      height: 27px;
+      width: 27px;
+      border-radius: 50%;
+      font-size: 15px;
+      margin-right: 7px;
+    }
+  }
+
+  .contact {
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    transition-duration: 0.12s;
+
+    background-color: rgb(219, 219, 219);
+    border-radius: 50%;
+    &:hover {
+      background-color: rgb(190, 190, 190);
+    }
+    .image {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .input-container {
+    .label {
+      margin-bottom: 5px;
+    }
+    .input {
+      border: 1.5px solid $Black;
+      outline: none;
+      border-radius: 8px;
+      height: 45px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px;
+    }
+  }
+  .actions {
+    .action {
+      font-weight: 500;
+      font-size: 15px;
+      height: 45px;
+      width: 48%;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition-duration: 0.12s;
+    }
+    .withdraw {
+      background-color: $YellowPrimary;
+      color: $White;
+      &:hover {
+        background-color: $YellowSecondary;
+      }
+    }
+    .draft {
+      background-color: $WhiteSecondary;
+      color: $BlackPrimary;
+      &:hover {
+        background-color: $WhitePrimary;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+// Montserrat
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+// Inter
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+}
+.btn-default {
+  border-radius: 8px;
+  height: 36px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 1px solid;
+}

@@ -1,0 +1,67 @@
+@import "./../../Assets/Styles/Variables.scss";
+
+.invoices-overview-container {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid $GrayPrimary;
+  padding: 20px 12px 0 12px;
+  border-radius: 15px;
+  margin: 30px 0;
+  .header {
+    border-bottom: 1px solid $GrayPrimary;
+    padding-bottom: 12px;
+    .icon {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition-duration: 0.12s;
+      &:hover {
+        background-color: rgba(218, 218, 218, 0.445);
+      }
+    }
+  }
+  .content {
+    .item {
+      border-bottom: 1px solid $GrayPrimary;
+      padding: 15px 0;
+      .image-container {
+        background-color: rgba(246, 246, 246, 1);
+        height: 40px;
+        width: 40px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        margin-right: 10px;
+        .image {
+          height: 20px;
+          width: 20px;
+        }
+      }
+      .progress-container {
+        .name {
+          margin-bottom: 5px;
+        }
+        width: 70%;
+        box-sizing: border-box;
+      }
+      .details {
+        width: 70px;
+        margin-left: 10px;
+      }
+    }
+    .see-all {
+      color: $Black;
+      font-weight: 600;
+      height: 35px;
+      border-radius: 5px;
+      width: 120px;
+      transition-duration: 0.12s;
+      margin: 15px 0;
+      &:hover {
+        background-color: rgba(1, 1, 1, 0.04);
+      }
+    }
+  }
+}

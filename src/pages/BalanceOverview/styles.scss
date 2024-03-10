@@ -1,0 +1,9 @@
+@import "./../../Assets/Styles/Variables.scss";
+
+.balance-overview-container {
+  border: 1px solid $GrayPrimary;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  height: 200px;
+}

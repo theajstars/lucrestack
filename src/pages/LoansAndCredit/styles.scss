@@ -1,0 +1,109 @@
+@import "./../../Assets/Styles/Variables.scss";
+.loans-credit-container {
+  box-sizing: border-box;
+  width: 100%;
+  .stats {
+    .stat {
+      border-radius: 15px;
+      border: 2px solid $BlackPrimary;
+      width: 350px;
+      box-sizing: border-box;
+      padding: 30px 20px;
+      height: 160px;
+    }
+  }
+  .table {
+    margin: 40px 0;
+    .header {
+      box-sizing: border-box;
+      padding: 5px 20px;
+      background: linear-gradient(270deg, #9220b5 19.16%, #fff7e6 138.62%);
+      box-shadow: 1px 1px 37px 6px rgba(0, 0, 0, 0.09);
+      border-radius: 5px;
+      margin-bottom: 15px;
+      .filter-input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: $White;
+        &::placeholder {
+          color: $White;
+        }
+      }
+      .filter-root {
+        border: none;
+        outline: none;
+        background-color: transparent !important;
+      }
+      .filter-section {
+        color: $White !important;
+      }
+    }
+    .details {
+      .detail {
+        span {
+          font-size: 12px;
+          color: $WhitePrimary;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          padding-left: 10px;
+          box-sizing: border-box;
+        }
+        .label {
+          background-color: $GreenPrimary;
+          width: 80px;
+          border-radius: 8px 0px 0px 8px;
+        }
+        .value {
+          border-radius: 0px 8px 8px 0px;
+          width: 140px;
+          background-color: $PurpleDefault;
+        }
+        &:last-child {
+          margin-top: 5px;
+        }
+      }
+    }
+    .view {
+      background-color: $GreenPrimary;
+      color: $WhitePrimary;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition-duration: 0.12s;
+      height: 37px;
+      width: 120px;
+      border-radius: 7px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .stats {
+      .stat {
+        width: 280px;
+        box-sizing: border-box;
+        padding: 20px;
+        height: 160px;
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .stats {
+      .stat {
+        flex-direction: column;
+        width: 30%;
+        height: 230px;
+        .flex-col:last-child {
+          padding-top: 12px;
+          border-top: 1px solid $GrayPrimary;
+        }
+      }
+    }
+  }
+}

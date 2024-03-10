@@ -1,0 +1,41 @@
+@import "./../../Assets/Styles/Variables.scss";
+.verifications-container {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid $GrayPrimary;
+  border-radius: 12px;
+  padding: 30px;
+  .filters {
+    .filter {
+      .label {
+        margin-bottom: 3px;
+        margin-left: 5px;
+      }
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+    margin-bottom: 20px;
+  }
+  .cell-value {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+  .cell-success-value {
+    background-color: $GreenTransparent;
+    color: $GreenPrimary;
+  }
+  .cell-pending-value {
+    background-color: $YellowPrimary;
+    color: $White;
+  }
+  .cell-failed-value {
+    background-color: $RedPrimary;
+    color: $White;
+  }
+}

@@ -1,0 +1,51 @@
+@import "./../../Assets/Styles/Variables.scss";
+
+.payroll-overview-container {
+  margin-top: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid $GrayPrimary;
+  padding: 30px 12px;
+  border-radius: 15px;
+  .header {
+    border-bottom: 1px solid $GrayPrimary;
+    padding-bottom: 12px;
+  }
+  .bills-table {
+    width: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    tr {
+      height: 70px;
+      td {
+        .image-container {
+          height: 40px;
+          width: 40px;
+          background-color: rgba(246, 246, 246, 1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+          margin-right: 10px;
+          .image {
+            height: 22px;
+            width: 22px;
+          }
+        }
+        .success-badge {
+          background-color: $GreenTransparent;
+          color: $GreenPrimary;
+          font-weight: 500;
+          font-size: 14px;
+          border-radius: 20px;
+          height: 40px;
+          width: 100px;
+          i {
+            font-size: 8px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}

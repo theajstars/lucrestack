@@ -1,0 +1,126 @@
+@import "./../../Assets/Styles/Variables.scss";
+.wallets-container {
+  box-sizing: border-box;
+  margin-top: 30px;
+
+  min-height: 100vh;
+  padding: 0 20px;
+
+  justify-content: space-between;
+
+  .left {
+    box-sizing: border-box;
+    width: 65%;
+    border-right: 1px solid $GrayPrimary;
+    padding-right: 35px;
+    .wallets {
+      margin-top: 12px;
+      .wallet {
+        height: 250px;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+        border: 1px solid $GrayPrimary;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        .image {
+          height: 60px;
+          width: 60px;
+          margin-right: 15px;
+        }
+        .button-row {
+          justify-content: space-between;
+          width: 100%;
+          .btn {
+            height: 35px;
+            width: 48%;
+            font-size: 12.5px;
+            padding: 0px;
+          }
+        }
+      }
+      .create-wallet {
+        padding: 40px 35px;
+        .image {
+          height: 80px;
+          width: 80px;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .right {
+    box-sizing: border-box;
+    width: 32%;
+    justify-content: space-between;
+    margin-top: -42px;
+
+    .right-right {
+      width: 100%;
+      height: fit-content;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    & {
+      flex-direction: column;
+      .left,
+      .right {
+        padding: 0 !important;
+        width: 100%;
+        border: none !important;
+      }
+      .right {
+        margin: 35px 0;
+      }
+    }
+  }
+  @media screen and (max-width: 927px) {
+    & {
+      .left {
+        .wallets {
+          .wallet-grid {
+            width: 100%;
+          }
+          .wallet {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 750px) {
+    & {
+      .right {
+        flex-direction: column;
+        width: 100%;
+        .right-left,
+        .right-right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.new-wallet-modal {
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  height: 500px;
+  .btn {
+    height: 45px;
+  }
+}
+.transfer-wallet-modal {
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  height: 800px;
+  .btn {
+    height: 45px;
+  }
+}

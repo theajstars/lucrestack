@@ -1,0 +1,65 @@
+$White: #fff;
+$WhitePrimary: #f8f8f8;
+$WhiteSecondary: #f2f2f2;
+
+$Black: rgba(0, 0, 0, 1);
+$BlackPrimary: #262626;
+
+$PurpleDefault: #1b1464;
+$PurplePrimary: rgba(154, 33, 195, 1);
+$PurpleTransparent: rgba(149, 32, 191, 0.1);
+
+$BluePrimary: #07387c;
+$BlueDark: #022150;
+
+$GrayPrimary: rgba(218, 218, 218, 1);
+$GraySecondary: rgb(119, 119, 125);
+$GrayTertiary: rgba(217, 217, 217, 1);
+$GrayDark: rgb(72, 72, 72);
+$GreenPrimary: #13a110;
+$GreenTransparent: rgba(27, 215, 23, 0.1);
+
+$RedPrimary: rgba(241, 87, 105, 1);
+$RedTransparent: rgba(241, 87, 105, 0.1);
+
+$YellowPrimary: #ffaa01;
+$YellowSecondary: #f9bf4c;
+
+.text-black-primary {
+  color: $BlackPrimary;
+}
+.text-blue-dark {
+  color: $BlueDark;
+}
+.text-purple-default {
+  color: $PurpleDefault;
+}
+.text-purple-primary {
+  color: $PurplePrimary;
+}
+
+.text-gray-primary {
+  color: $GrayPrimary;
+}
+.text-gray-secondary {
+  color: $GraySecondary;
+}
+.text-gray-dark {
+  color: $GrayDark;
+}
+.text-red-primary {
+  color: $RedPrimary;
+}
+
+.text-green-primary {
+  color: $GreenPrimary;
+}
+.text-yellow-primary {
+  color: $YellowPrimary;
+}
+.text-white {
+  color: $White;
+}
+.text-white-primary {
+  color: $WhitePrimary;
+}
